@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: recommendation-service
-        image: cree1116/recommendation-service:latest
+        image: cree1116/recommendation-service:54d3cabcb75622d0bdd46cc0e11fb21dd35c5629
         imagePullPolicy: Always
         ports:
         - containerPort: 8008
@@ -75,10 +75,10 @@ spec:
         resources:
           limits:
             memory: "2Gi"
-            cpu: "1.0"
+            cpu: "2.0"
           requests:
             memory: "1Gi"
-            cpu: "500m"
+            cpu: "1.0"
         volumeMounts:
         - name: model-storage
           mountPath: /app/models
