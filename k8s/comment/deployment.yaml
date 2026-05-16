@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: comment-service
-        image: cree1116/comment-service:2c9aade9b70c94f0032cf7566f126916a7da1ef3
+        image: cree1116/comment-service:4bb04ec48b6a39e806c21e001a19d2490fc7f9b1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8005
