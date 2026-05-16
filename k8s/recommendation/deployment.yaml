@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: recommendation-service
-        image: recommendation-service:v33
+        image: recommendation-service:v41
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8008
