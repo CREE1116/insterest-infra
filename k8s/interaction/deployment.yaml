@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: interaction-service
-        image: cree1116/interaction-service:4bb04ec48b6a39e806c21e001a19d2490fc7f9b1
+        image: cree1116/interaction-service:71899e111f5ef834c39e4369fc92507483c3010a
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8004
