@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: generation-service
-        image: cree1116/generation-service:50950295e0ffd6bcf1d9345f28f0873e50b72be6
+        image: cree1116/generation-service:9d07156f383d8b0751e9d2c62b72b057cdb58978
         imagePullPolicy: IfNotPresent
         resources:
           requests:

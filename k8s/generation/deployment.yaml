@@ -2,9 +2,11 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: generation-secrets
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
 type: Opaque
 stringData:
-  GEMINI_API_KEY: "AIzaSyBAP8OqirwAQ9fLSsyV9ytwxb4i1dpT550"
+  GEMINI_API_KEY: "AIzaSyDQ8YnL0pW1RwVJPjoTDYmKI6yLp4p54PM"
 ---
 apiVersion: v1
 kind: Service
@@ -34,7 +36,7 @@ spec:
     spec:
       containers:
       - name: generation-service
-        image: cree1116/generation-service:latest
+        image: cree1116/generation-service:9d07156f383d8b0751e9d2c62b72b057cdb58978
         imagePullPolicy: Always
         resources:
           requests:
