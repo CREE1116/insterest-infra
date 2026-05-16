@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: recommendation-service
-        image: cree1116/recommendation-service:2ce1164dd1735f65376a32d71a3a26fe8ee3b106
+        image: cree1116/recommendation-service:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8008
@@ -64,7 +64,7 @@ spec:
         - name: COMMENT_SERVICE_URL
           value: "http://comment-service:8005"
         - name: MODEL_SAVE_PATH
-          value: "/app/models/discovery_engine.pth"
+          value: "/data/models/discovery_engine.pth"
         readinessProbe:
           httpGet:
             path: /health
