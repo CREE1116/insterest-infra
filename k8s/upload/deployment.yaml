@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: upload-service
-        image: upload-service:v41
+        image: upload-service:v1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8001
