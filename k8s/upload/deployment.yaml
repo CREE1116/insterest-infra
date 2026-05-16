@@ -26,6 +26,7 @@ metadata:
   name: upload-service
 spec:
   replicas: 1
+  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: upload-service
@@ -36,8 +37,8 @@ spec:
     spec:
       containers:
       - name: upload-service
-        image: cree1116/upload-service:3bb08a67865bbd640c6ce433b0fabb5b180dd404
-        imagePullPolicy: IfNotPresent
+        image: cree1116/upload-service:d36caf803ac2caebd73773d88f4c11c07aa30c6e
+        imagePullPolicy: Always
         ports:
         - containerPort: 8001
         env:

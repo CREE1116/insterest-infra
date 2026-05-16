@@ -15,6 +15,7 @@ metadata:
   name: comment-service
 spec:
   replicas: 1
+  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: comment-service
@@ -25,8 +26,8 @@ spec:
     spec:
       containers:
       - name: comment-service
-        image: cree1116/comment-service:3bb08a67865bbd640c6ce433b0fabb5b180dd404
-        imagePullPolicy: IfNotPresent
+        image: cree1116/comment-service:d36caf803ac2caebd73773d88f4c11c07aa30c6e
+        imagePullPolicy: Always
         ports:
         - containerPort: 8005
         env:

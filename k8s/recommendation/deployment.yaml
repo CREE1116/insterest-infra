@@ -4,6 +4,7 @@ metadata:
   name: recommendation-service
 spec:
   replicas: 1
+  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: recommendation-service
@@ -14,8 +15,8 @@ spec:
     spec:
       containers:
       - name: recommendation-service
-        image: cree1116/recommendation-service:3bb08a67865bbd640c6ce433b0fabb5b180dd404
-        imagePullPolicy: IfNotPresent
+        image: cree1116/recommendation-service:d36caf803ac2caebd73773d88f4c11c07aa30c6e
+        imagePullPolicy: Always
         ports:
         - containerPort: 8008
         env:
