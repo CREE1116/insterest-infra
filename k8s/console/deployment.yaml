@@ -27,7 +27,7 @@ spec:
     spec:
       containers:
       - name: console-frontend
-        image: cree1116/console-frontend:latest
+        image: cree1116/frontend:893c6d18d889f9e4b8d305c972b26f52b7d77580
         imagePullPolicy: Always
         ports:
         - containerPort: 80

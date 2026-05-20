@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: recommendation-service
-        image: cree1116/recommendation-service:latest
+        image: cree1116/recommendation-service:893c6d18d889f9e4b8d305c972b26f52b7d77580
         imagePullPolicy: Always
         ports:
         - containerPort: 8008
