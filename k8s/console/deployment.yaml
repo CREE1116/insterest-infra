@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: console-frontend
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30088
   selector:
     app: console-frontend
 ---
@@ -28,7 +27,7 @@ spec:
     spec:
       containers:
       - name: console-frontend
-        image: cree1116/console-frontend:93c58a7d9f226f7edc6de87e3b0b4a2ecd13692f
+        image: cree1116/console-frontend:7a43cc99a92c702ddd544724415d07e894f3bc31
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
