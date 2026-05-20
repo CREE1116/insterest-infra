@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: upload-service
-        image: cree1116/upload-service:68ea58f55fd19eb6402a07c678e9cea6e73a78f7
+        image: cree1116/upload-service:d11657078616005445699a40c44fa705700df9e9
         imagePullPolicy: Always
         ports:
         - containerPort: 8001
