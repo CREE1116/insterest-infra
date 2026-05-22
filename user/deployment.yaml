@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
       - name: user-app
-        image: cree1116/user-service:747f09f7a75aebdaaaf200104e2dfc9a21388ed3
+        image: cree1116/user-service:c0211b85ebd46a327d4bcaa3070e89efbc2bb7d8
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8006
