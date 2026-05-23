@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: cree1116/frontend:318aff0111b723c3d980947c7b0fa058608c79fe
+        image: cree1116/frontend:4ea42be6a4cd4b1a755ba5d0909f68f28a68eccd
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
